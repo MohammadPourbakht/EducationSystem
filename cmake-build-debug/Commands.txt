@@ -1,0 +1,10 @@
+show students
+add student 952023016 Farhang Doroudian
+add student 952023017 Alireza Akhavan
+add student 9520230a7 Maryam Akhavan
+add student 952023020 Said Ghorbani
+add student 952023018 Sara Goli
+add student 952023019 Babak Moghtader
+add professor 241 Reza Mansouri Prof
+add professor 242 Roya Sahami Assistant
+add professor 243 Shahrouz Asgari Associate
