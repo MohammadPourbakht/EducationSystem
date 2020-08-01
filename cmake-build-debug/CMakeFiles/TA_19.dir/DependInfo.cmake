@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/cygdrive/c/Users/mohammad/CLionProjects/EducationSystem/Controller/Controller.cpp" "/cygdrive/c/Users/mohammad/CLionProjects/EducationSystem/cmake-build-debug/CMakeFiles/TA_19.dir/Controller/Controller.cpp.o"
   "/cygdrive/c/Users/mohammad/CLionProjects/EducationSystem/Model/Course.cpp" "/cygdrive/c/Users/mohammad/CLionProjects/EducationSystem/cmake-build-debug/CMakeFiles/TA_19.dir/Model/Course.cpp.o"
+  "/cygdrive/c/Users/mohammad/CLionProjects/EducationSystem/Model/DoubleMajorStudent.cpp" "/cygdrive/c/Users/mohammad/CLionProjects/EducationSystem/cmake-build-debug/CMakeFiles/TA_19.dir/Model/DoubleMajorStudent.cpp.o"
   "/cygdrive/c/Users/mohammad/CLionProjects/EducationSystem/Model/Person.cpp" "/cygdrive/c/Users/mohammad/CLionProjects/EducationSystem/cmake-build-debug/CMakeFiles/TA_19.dir/Model/Person.cpp.o"
   "/cygdrive/c/Users/mohammad/CLionProjects/EducationSystem/Model/Professor.cpp" "/cygdrive/c/Users/mohammad/CLionProjects/EducationSystem/cmake-build-debug/CMakeFiles/TA_19.dir/Model/Professor.cpp.o"
   "/cygdrive/c/Users/mohammad/CLionProjects/EducationSystem/Model/Student.cpp" "/cygdrive/c/Users/mohammad/CLionProjects/EducationSystem/cmake-build-debug/CMakeFiles/TA_19.dir/Model/Student.cpp.o"
