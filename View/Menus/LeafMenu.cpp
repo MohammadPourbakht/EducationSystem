@@ -36,7 +36,10 @@ void LeafMenu::run() {
     }
 
     else if(name == "Show Student Courses In Current Semester"){
-
+        string ID;
+        cout << "Enter student number: ";
+        cin >> ID;
+        showStudentSemesterCourses(ID);
     }
 
     else if(name == "Calculate Student Salary"){
@@ -98,4 +101,15 @@ void LeafMenu :: showSemesterCourses(){
     for(const auto& crs : controller.currentSemesterCourses){
         cout << crs.toString() << endl;
     }
+}
+
+void LeafMenu :: showStudentSemesterCourses(const std::string& studentID){
+    for( auto& stu :  controller.findStudent(studentID).currentSemesterCourses ){
+        cout << "Course: " << stu.first <<'\t';
+    }
+}
+
+double LeafMenu :: CalculateStudentSalary(const std::string& studentID){
+    double calculateStudentSalary = controller.findStudent(studentID).calculateSalary();
+    return calculateStudentSalary;
 }

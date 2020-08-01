@@ -9,7 +9,11 @@ public:
     LeafMenu(std::string name, Menu* parent);
     virtual void showSubMenus() const override;
     virtual void run() override;
+
+
     static void showSemesterCourses();
+    static void showStudentSemesterCourses(const std::string& studentID);
+    double CalculateStudentSalary(const std::string& studentID);
 
 };
 
