@@ -18,6 +18,9 @@ public:
 
      virtual double calculateSalary() const override;
 
+    const std::string &getMajor2() const;
+
+    void setMajor2(const std::string &major2);
 
 };
 
