@@ -43,7 +43,10 @@ void LeafMenu::run() {
     }
 
     else if(name == "Calculate Student Salary"){
-
+        string ID;
+        cout << "Enter student number: ";
+        cin >> ID;
+        CalculateStudentSalary(ID);
     }
 
     else if(name == "Show Professor Courses In Current Semester"){
