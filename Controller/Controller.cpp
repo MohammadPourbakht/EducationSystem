@@ -143,5 +143,5 @@ Student& Controller:: findStudent(string ID){
 void Controller:: takeCourse(const std::string& studentID, const std::string& courseName){
     if(inCourses(courseName)){
         findStudent(studentID).currentSemesterCourses.insert({courseName, 0});
-    }
+}
 }
