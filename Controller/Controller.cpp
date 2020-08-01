@@ -96,7 +96,6 @@ void Controller:: addCourse(std::string courseName, std::string profLast, std::s
             currentSemesterCourses.push_back(crs);
         }
     }
-
 }
 
 bool Controller::inStudents(const std::string& ID) const{
@@ -178,7 +177,7 @@ void Controller::readMembersFromFile(){
         vector<string> results{istream_iterator<string>{iss}, istream_iterator<string>()};
 
         if(results[0]=="P"){
-            int number = stoi(results[5]);
+            int number = stoi(results[5]);                              //??
             Professor prof {results[1],results[2],results[3],(double)number,results[4]};
             mathClass.push_back(&prof);
         }
@@ -188,7 +187,7 @@ void Controller::readMembersFromFile(){
             stu.setFirstName(results[2]);
             stu.setLastName(results[3]);
             int numberWh = stoi(results[4]);
-            stu.setWorkHours((double)numberWh);
+            stu.setWorkHours((double)numberWh);                 // ???
             mathClass.push_back(&stu);
         }
         if(results[0]=="D"){
@@ -197,7 +196,7 @@ void Controller::readMembersFromFile(){
             dStu.setFirstName(results[2]);
             dStu.setLastName(results[3]);
             int numberDmWh=stoi(results[4]);
-            dStu.setWorkHours((double)numberDmWh);
+            dStu.setWorkHours((double)numberDmWh);          //??
             mathClass.push_back(&dStu);
         }
     }

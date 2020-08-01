@@ -1,5 +1,6 @@
 #include "LeafMenu.h"
-
+#include <sstream>
+#include "../../Controller/Controller.h"
 using namespace std;
 
 LeafMenu::LeafMenu(std::string name, Menu* parent)
@@ -40,13 +41,14 @@ void LeafMenu::run() {
         cout << "Enter student number: ";
         cin >> ID;
         showStudentSemesterCourses(ID);
+        cout << endl;
     }
 
     else if(name == "Calculate Student Salary"){
         string ID;
         cout << "Enter student number: ";
         cin >> ID;
-        CalculateStudentSalary(ID);
+        cout << CalculateStudentSalary(ID)<< endl;
     }
 
     else if(name == "Show Professor Courses In Current Semester"){
@@ -95,11 +97,11 @@ void LeafMenu::run() {
     }
 
     else if(name == "Read Members From File"){
-
+         controller.readMembersFromFile();
     }
 
     else if(name == "Calculate Total Salary"){
-
+        cout << controller.calculateTotalSalary() << endl;
     }
 
     else{
