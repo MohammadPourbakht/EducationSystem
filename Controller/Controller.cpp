@@ -148,7 +148,16 @@ void Controller:: takeCourse(const std::string& studentID, const std::string& co
 
 
 void Controller:: dropCourse(const std::string& studentID, const std::string& courseName){
-    if(inCourses(courseName)){
+    if(inCurrentCourses(courseName)){
         findStudent(studentID).currentSemesterCourses.erase({courseName});
     }
+}
+
+bool Controller::inCurrentCourses(const std::string &courseName) const {
+    for( const auto& crs : currentSemesterCourses ){
+        if( crs.courseName == courseName){
+            return true;
+        }
+    }
+    return false;
 }
