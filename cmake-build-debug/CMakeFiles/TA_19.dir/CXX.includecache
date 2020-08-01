@@ -9,11 +9,19 @@
 /cygdrive/c/Users/mohammad/CLionProjects/EducationSystem/Controller/Controller.cpp
 Controller.h
 /cygdrive/c/Users/mohammad/CLionProjects/EducationSystem/Controller/Controller.h
+../Model/DoubleMajorStudent.h
+/cygdrive/c/Users/mohammad/CLionProjects/EducationSystem/Model/DoubleMajorStudent.h
 fstream
 -
 vector
 -
 map
+-
+iostream
+-
+sstream
+-
+iterator
 -
 
 /cygdrive/c/Users/mohammad/CLionProjects/EducationSystem/Controller/Controller.h
@@ -34,9 +42,25 @@ string
 vector
 -
 
+/cygdrive/c/Users/mohammad/CLionProjects/EducationSystem/Model/DoubleMajorStudent.cpp
+DoubleMajorStudent.h
+/cygdrive/c/Users/mohammad/CLionProjects/EducationSystem/Model/DoubleMajorStudent.h
+
+/cygdrive/c/Users/mohammad/CLionProjects/EducationSystem/Model/DoubleMajorStudent.h
+Student.h
+/cygdrive/c/Users/mohammad/CLionProjects/EducationSystem/Model/Student.h
+
+/cygdrive/c/Users/mohammad/CLionProjects/EducationSystem/Model/Person.cpp
+Person.h
+/cygdrive/c/Users/mohammad/CLionProjects/EducationSystem/Model/Person.h
+
 /cygdrive/c/Users/mohammad/CLionProjects/EducationSystem/Model/Person.h
 string
 -
+
+/cygdrive/c/Users/mohammad/CLionProjects/EducationSystem/Model/Professor.cpp
+Professor.h
+/cygdrive/c/Users/mohammad/CLionProjects/EducationSystem/Model/Professor.h
 
 /cygdrive/c/Users/mohammad/CLionProjects/EducationSystem/Model/Professor.h
 string
@@ -45,6 +69,16 @@ iostream
 -
 Person.h
 /cygdrive/c/Users/mohammad/CLionProjects/EducationSystem/Model/Person.h
+
+/cygdrive/c/Users/mohammad/CLionProjects/EducationSystem/Model/Student.cpp
+Student.h
+/cygdrive/c/Users/mohammad/CLionProjects/EducationSystem/Model/Student.h
+regex
+-
+stdexcept
+-
+sstream
+-
 
 /cygdrive/c/Users/mohammad/CLionProjects/EducationSystem/Model/Student.h
 Person.h

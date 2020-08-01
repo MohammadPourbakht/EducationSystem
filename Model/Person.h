@@ -1,17 +1,5 @@
 #ifndef TA_19_PERSON_H
 
-void Person::setFirstName(const std::string &firstName) {
-    Person::firstName = firstName;
-}
-
-void Person::setLastName(const std::string &lastName) {
-    Person::lastName = lastName;
-}
-
-void Person::setWorkHours(double workHours) {
-    Person::workHours = workHours;
-}
-
 #define TA_19_PERSON_H
 
 #include <string>

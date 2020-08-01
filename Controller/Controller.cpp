@@ -166,7 +166,7 @@ bool Controller::inCurrentCourses(const std::string &courseName) const {
     return false;
 }
 
-void Controller::ReadMembersFromFile(){
+void Controller::readMembersFromFile(){
     string read;
     char * str = new char[1000];
     ifstream input("members.txt");
@@ -200,8 +200,13 @@ void Controller::ReadMembersFromFile(){
             dStu.setWorkHours((double)numberDmWh);
             mathClass.push_back(&dStu);
         }
-
     }
+}
 
-
+double Controller:: calculateTotalSalary(){
+    double total = 0;
+    for(int i = 0 ; i<mathClass.size() ; ++i){
+        total += mathClass[i]->calculateSalary();
+    }
+    return total;
 }
