@@ -88,3 +88,5 @@ void Student::setPassedCourses(const vector<std::string> &passedCourses) {
 void Student::setCurrentSemesterCourses(const map<std::string, double> &currentSemesterCourses) {
     Student::currentSemesterCourses = currentSemesterCourses;
 }
+
+
