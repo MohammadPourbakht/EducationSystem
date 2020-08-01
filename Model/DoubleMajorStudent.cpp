@@ -58,3 +58,8 @@ std::istream& operator>>(std::istream & input, DoubleMajorStudent& student){
     return input;
 }
 
+
+double Student::calculateSalary() const{
+    return 6500 * getWorkHours();
+}
+
