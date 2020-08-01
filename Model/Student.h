@@ -16,6 +16,10 @@ class Student : public Person {
     friend std::istream& operator>>(std::istream & input, Student& student);
 
 protected:
+public:
+    void setStudentId(const std::string &studentId);
+
+protected:
     std::string studentId;
     std::vector<std::string> passedCourses;
     std::map<std::string, double> currentSemesterCourses;

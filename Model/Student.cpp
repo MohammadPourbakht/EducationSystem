@@ -89,4 +89,8 @@ void Student::setCurrentSemesterCourses(const map<std::string, double> &currentS
     Student::currentSemesterCourses = currentSemesterCourses;
 }
 
+void Student::setStudentId(const string &studentId) {
+    Student::studentId = studentId;
+}
+
 

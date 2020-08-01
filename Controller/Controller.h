@@ -41,6 +41,8 @@ public:
 
     void dropCourse(const std::string& studentID, const std::string& courseName);
     bool inCurrentCourses(const std::string& courseName) const;
+
+   void ReadMembersFromFile();
 };
 
 

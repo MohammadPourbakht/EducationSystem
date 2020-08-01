@@ -1,7 +1,11 @@
 #include "Controller.h"
+#include "../Model/DoubleMajorStudent.h"
 #include <fstream>
 #include <vector>
 #include <map>
+#include <iostream>
+#include<sstream>
+#include <iterator>
 
 using namespace std;
 
@@ -160,4 +164,44 @@ bool Controller::inCurrentCourses(const std::string &courseName) const {
         }
     }
     return false;
+}
+
+void Controller::ReadMembersFromFile(){
+    string read;
+    char * str = new char[1000];
+    ifstream input("members.txt");
+
+    while (!input.eof()){
+        input.getline(str,1000);
+        read = (string) str;
+        istringstream iss{read};
+        vector<string> results{istream_iterator<string>{iss}, istream_iterator<string>()};
+
+        if(results[0]=="P"){
+            int number = stoi(results[5]);
+            Professor prof {results[1],results[2],results[3],(double)number,results[4]};
+            mathClass.push_back(&prof);
+        }
+        if(results[0]=="S"){
+            Student stu;
+            stu.setStudentId(results[1]);
+            stu.setFirstName(results[2]);
+            stu.setLastName(results[3]);
+            int numberWh = stoi(results[4]);
+            stu.setWorkHours((double)numberWh);
+            mathClass.push_back(&stu);
+        }
+        if(results[0]=="D"){
+            DoubleMajorStudent dStu;
+            dStu.setStudentId(results[1]);
+            dStu.setFirstName(results[2]);
+            dStu.setLastName(results[3]);
+            int numberDmWh=stoi(results[4]);
+            dStu.setWorkHours((double)numberDmWh);
+            mathClass.push_back(&dStu);
+        }
+
+    }
+
+
 }
